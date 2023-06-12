@@ -11,6 +11,12 @@
             padding: 0;
             font-family: Arial, Helvetica, sans-serif;
         }
+        
+        ::selection{
+            background-color: lime;
+            color: black;
+        }
+
         body{
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
@@ -24,22 +30,53 @@
         }
 
         table{
-            width: 550px;
+            width: 500px;
             border-collapse: collapse;
             margin: 20px auto;
             background-color: white;
             box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.466);
+            position: relative;
+        }
+
+        caption {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1.5em;
+            color: white;
+            text-transform: capitalize;
+            padding-bottom: 15px;
         }
         thead{
             background-color: gray;
         }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+
+        tbody tr:nth-child(odd) {
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+        tbody tr:hover {
+            background-color: orange;
+            color: black;
+        }
+
         td, th{
             border: 1px solid black;
             padding: 10px;
         }
+
+        tfoot{
+            background-color: lightgray;
+        }
+
         .num{
             text-align: right;
         }
+
         button{
             width: 550px;
             height: 30px;
@@ -67,6 +104,7 @@
     <!--
         ANATOMIA DE TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -76,10 +114,11 @@
     -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -194,7 +233,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>214,3 milhões</strong></td>
             </tr>
         </tfoot>
