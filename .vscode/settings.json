@@ -1,0 +1,8 @@
+{
+	"workbench.editor.highlightModifiedTabs": true,
+	"workbench.editor.showTabs": "none",
+	"workbench.editor.scrollToSwitchTabs": true,
+	"workbench.editor.pinnedTabsOnSeparateRow": true,
+	"workbench.editor.wrapTabs": true,
+	"editor.useTabStops": true
+}
