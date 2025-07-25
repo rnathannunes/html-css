@@ -18,12 +18,19 @@ Grandes telas: acima de 1200px
 		background-image: url(../imagens/back-tablet.jpg);
 	}
 	img#tablet{display: block;}
+	img#phone{display: none;}
 }
 @media screen and (min-width: 992px) {
 	body{
-		background-image: url(..);
+		background-image: url(../imagens/back-pc.jpg);
 	}
+	img#desktop{display: block;}
+	img#tablet{display: none;}
 }
 @media screen and (min-width:1200px) {
-	
+	body{
+		background-image: url(../imagens/back-tv.jpg);
+	}
+	img#tv{display: block;}
+	img#desktop{display: none;}
 }

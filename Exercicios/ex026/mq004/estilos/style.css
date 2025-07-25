@@ -45,6 +45,6 @@ img{
 	display: block;
 }
 
-#tablet, #print, #pc, #tv{
+#tablet, #print, #desktop, #tv{
 	display: none;
 }
